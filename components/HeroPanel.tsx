@@ -1,6 +1,28 @@
-import { TrendingUp, TrendingDown, Users, DollarSign, Activity } from "lucide-react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { LineChart, Line, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar } from "recharts";
+import {
+  TrendingUp,
+  TrendingDown,
+  Users,
+  DollarSign,
+  Activity,
+} from "lucide-react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "./ui/card";
+import {
+  AreaChart,
+  Area,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+  BarChart,
+  Bar,
+} from "recharts";
 
 const revenueData = [
   { name: "Jan", value: 4000 },
@@ -97,7 +119,9 @@ export function HeroPanel() {
         <Card>
           <CardHeader>
             <CardTitle>Revenue Overview</CardTitle>
-            <CardDescription>Monthly revenue for the last 7 months</CardDescription>
+            <CardDescription>
+              Monthly revenue for the last 7 months
+            </CardDescription>
           </CardHeader>
           <CardContent>
             <ResponsiveContainer width="100%" height={300}>
@@ -106,7 +130,13 @@ export function HeroPanel() {
                 <XAxis dataKey="name" />
                 <YAxis />
                 <Tooltip />
-                <Area type="monotone" dataKey="value" stroke="#030213" fill="#030213" fillOpacity={0.1} />
+                <Area
+                  type="monotone"
+                  dataKey="value"
+                  stroke="#030213"
+                  fill="#030213"
+                  fillOpacity={0.1}
+                />
               </AreaChart>
             </ResponsiveContainer>
           </CardContent>

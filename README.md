@@ -29,17 +29,20 @@ A modern React dashboard application built with TypeScript, Vite, and Tailwind C
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone <your-repository-url>
    cd dashboard-application
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
 
 3. Start the development server:
+
    ```bash
    npm run dev
    ```
