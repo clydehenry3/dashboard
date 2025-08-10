@@ -16,14 +16,18 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          vendor: ['react', 'react-dom'],
-          ui: ['@radix-ui/react-slot', '@radix-ui/react-progress', 'class-variance-authority']
-        }
-      }
-    }
+          vendor: ["react", "react-dom"],
+          ui: [
+            "@radix-ui/react-slot",
+            "@radix-ui/react-progress",
+            "class-variance-authority",
+          ],
+        },
+      },
+    },
   },
   server: {
     port: 5173,
-    open: true
-  }
+    open: true,
+  },
 });
